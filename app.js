@@ -44,20 +44,32 @@ var coding = prompt('Do like coding?'+ user );
 var walking = prompt(user + 'do you walk every day to work?');
 
 if (toUpperCase(dogs) === 'YES'){
+    alert('you were right")
 }else {
-    alert('dogs are the coolest animal');
+    alert('sorry wrong answer');
 }
 
 if (toUpperCase(water) === 'NO'){
+    alert('right answer')
 }else {
-    alert('Its is healthly for you');
+    alert('sorry wrong answer');
 }
 
 if (toLowercase(running) === 'yes'){
+    alert('that is the right answer')
 }else{
+    alert('sorry wrong answer')
 
 }
 
-if(toUpperCase(coding) === 'yes')
+if(toUpperCase(coding) === 'yes'){
+    alert('right answer')
+}else{
+    alert('wrong answer')
+}
 
-if (toLowercase(walking) === 'YES');
+if (toLowercase(walking) === 'YES'){
+    alert('nice that is the right answer')
+}else{
+    alert('sorry wrong answer better luck next time')
+}
