@@ -27,11 +27,13 @@
 var score = 0
 var states = ['california' , 'florida', 'arizona', 'texas', 'nevada']
 var randowNumber = Math.floor(Math.random() * 21 );
+
 var user = prompt('what is your name');
 console.log(user);
 
 alert("Hi there I'm going to ask you few question");
 
+function questionTwo() {
 var dogs = prompt('Do you have any dogs ' + user + ' please answer with yes or no');
 
 if (dogs.toUpperCase() === 'YES' || 'Y'){
@@ -41,7 +43,9 @@ if (dogs.toUpperCase() === 'YES' || 'Y'){
     alert('sorry wrong answer');
 }
 console.log(dogs);
+}
 
+function questionThree() {
 var water = prompt ('Do you like drinking water '  + user );
 if (water.toUpperCase() === 'NO'){
     alert('right answer');
@@ -50,7 +54,9 @@ if (water.toUpperCase() === 'NO'){
     alert('sorry wrong answer');
 }
 console.log(water);
+}
 
+function questionFour() {
 var running = prompt('Is running your favorite?');
 if (running.toLowerCase() === 'yes'){
     alert('that is the right answer');
@@ -59,9 +65,10 @@ if (running.toLowerCase() === 'yes'){
     alert('sorry wrong answer');
 }
 console.log(running);
+}
 
-var coding = prompt('Do like coding?' + user );
-
+function questionFive() {
+var coding = prompt('Do like coding ' + user + '?');
 if(coding.toLowerCase() === 'yes'){
     alert('right answer');
     score++
@@ -69,8 +76,9 @@ if(coding.toLowerCase() === 'yes'){
     alert('wrong answer');
 }
 console.log(coding);
+}
 
-
+function questionSix() {
 var walking = prompt(user + ' do you walk every day to work?');
 if (walking.toLowerCase() === 'yes'){
     alert('nice that is the right answer');
@@ -78,6 +86,9 @@ if (walking.toLowerCase() === 'yes'){
 } else{ 
     alert('sorry wrong answer');
 }
+}
+
+function questionSeven() {
  console.log('randowNumber is equal to ', randowNumber)
 
 for (var i= 6; i > 0; i--) {
@@ -94,8 +105,11 @@ if (randowNumber < number){
 }
 }
 console.log('what is my favorite number', randowNumber);
+}
 
- console.log('states is equal to', states)
+function questionEight() {
+console.log('states is equal to', states)
+
 for (var i= 6; i > 0; i--){
     var states = prompt(user + ' can you guess the state that i spend my time durning summer');
     
@@ -107,6 +121,16 @@ if (states.toLowerCase() === 'california' || states.toLowerCase() === 'nevada'){
     alert(user + ' you guess wrong')
 }
 }
+}
+
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
+questionEight();
+
 alert('you got ' + score + ' out of 7 question correct, ' + user + ' better luck next time' );
 console.log(score);
 
