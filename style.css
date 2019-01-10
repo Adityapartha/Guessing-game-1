@@ -2,13 +2,18 @@ header{
     background: #FB1;
     color: #101;
     padding: 30px;
+    width: 250px;
+    border: 3px dotted #02ac1e
 }
 h1{
     font: size 30px;
     color: #02ac1e
+   
+    
 }
 h2{
     background: #101;
     font: size 20px;
     color: #2edd17;
+    border-color: #101 #02ac1e #bbbbaa, #ee3e80;
 }
