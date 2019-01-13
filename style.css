@@ -1,14 +1,29 @@
+body{
+    text-align: center;
+    background: #ffffe6;
+}
 header{
+    text-align: center;
     background: #FB1;
-    color: #101;
-    padding: 30px;
+    padding: 20px;
+    border: 3px dotted white;   
 }
 h1{
-    font: size 30px;
+    font-family: ChunkFiveRegular, Georgia, serif;
+    font-size: 40px;
     color: #02ac1e
 }
 h2{
-    background: #101;
-    font: size 20px;
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
     color: #2edd17;
+    background: #101;
+    border: 4px double white;  
+    padding: 10px; 
+}
+p{
+   font-size: 35px;  
+   color: #2edd17;
+   
 }
